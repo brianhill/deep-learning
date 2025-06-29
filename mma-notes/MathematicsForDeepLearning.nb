@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     71664,       2120]
-NotebookOptionsPosition[     68974,       2062]
-NotebookOutlinePosition[     69426,       2080]
-CellTagsIndexPosition[     69383,       2077]
+NotebookDataLength[     71752,       2122]
+NotebookOptionsPosition[     69062,       2064]
+NotebookOutlinePosition[     69514,       2082]
+CellTagsIndexPosition[     69471,       2079]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1752,8 +1752,7 @@ with respect to the \[Alpha]\[CloseCurlyQuote]s by defining\n\n",
   FormatType->TraditionalForm,ExpressionUUID->
   "abde076d-65e1-4f85-8c56-7b666de97aaa"],
  "\n\n",
- "Because",
- StyleBox[" people that do matrix multiplications all the time",
+ StyleBox["Because people that do matrix multiplications all the time...",
   FontWeight->"Bold"],
  " know that (1) each matrix carries two indices, (2) that the left-most \
 index in an expression is a free index (in this case, ",
@@ -1782,7 +1781,10 @@ indices (in this case, ",
    SubscriptBox["i", "2"], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
   "a721c2b4-4a1b-402f-98ea-5ae953c3c37b"],
- ") and are summed over all their allowed values. So they ",
+ ") and are summed over all their allowed values. So ",
+ StyleBox["...they",
+  FontWeight->"Bold"],
+ " ",
  StyleBox["don\[CloseCurlyQuote]t bother writing any indices!",
   FontWeight->"Bold"],
  " With that understanding, we have simply\n\n",
@@ -1809,8 +1811,8 @@ indices (in this case, ",
    3.960223347124556*^9, 3.960223911107502*^9}, {3.960223943433166*^9, 
    3.960224571790263*^9}, {3.9602246156838512`*^9, 3.960224721542321*^9}, 
    3.960224783652788*^9, {3.960226080668881*^9, 3.9602261565348253`*^9}, {
-   3.960226613529842*^9, 
-   3.960226632594508*^9}},ExpressionUUID->"1b00cc85-d511-4f1a-91ba-\
+   3.960226613529842*^9, 3.960226632594508*^9}, {3.96022704152629*^9, 
+   3.960227060893491*^9}},ExpressionUUID->"1b00cc85-d511-4f1a-91ba-\
 a814ece38b3b"]
 }, Open  ]],
 
@@ -2114,11 +2116,11 @@ Cell[31915, 954, 18470, 564, 1477, "Text",ExpressionUUID->"1dff31d3-5cc0-41c9-99
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[50422, 1523, 575, 8, 82, "Section",ExpressionUUID->"75cd5bdb-3106-4375-8676-57388a65c93f"],
-Cell[51000, 1533, 9551, 280, 1282, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91ba-a814ece38b3b"]
+Cell[51000, 1533, 9639, 282, 1282, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91ba-a814ece38b3b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60588, 1818, 679, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
-Cell[61270, 1830, 7664, 227, 919, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
+Cell[60676, 1820, 679, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
+Cell[61358, 1832, 7664, 227, 919, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
