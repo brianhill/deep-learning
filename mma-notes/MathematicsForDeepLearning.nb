@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     71283,       2107]
-NotebookOptionsPosition[     68593,       2049]
-NotebookOutlinePosition[     69045,       2067]
-CellTagsIndexPosition[     69002,       2064]
+NotebookDataLength[     72678,       2136]
+NotebookOptionsPosition[     69763,       2074]
+NotebookOutlinePosition[     70215,       2092]
+CellTagsIndexPosition[     70172,       2089]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2043,6 +2043,31 @@ summation of repeated indices."
   3.9602259712877197`*^9}, {3.960226230407205*^9, 
   3.96022631399235*^9}},ExpressionUUID->"880c8be9-ef56-4c10-af63-\
 324cb9e1365d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["One Example of the General Case", "Section",
+ CellChangeTimes->{{3.960210613713471*^9, 3.96021061665407*^9}, {
+  3.9602107762327623`*^9, 3.9602107834038067`*^9}, {3.960211297288374*^9, 
+  3.9602113169963503`*^9}, {3.9602127607953663`*^9, 3.960212762116338*^9}, {
+  3.9602193513037863`*^9, 3.9602193520203533`*^9}, {3.960220031471085*^9, 
+  3.960220033554599*^9}, {3.9602207969727907`*^9, 3.960220847972321*^9}, {
+  3.960220912204287*^9, 3.960220920856862*^9}, {3.960222764614468*^9, 
+  3.9602227795408363`*^9}, {3.960224755805385*^9, 3.960224758080903*^9}, {
+  3.9602267350915623`*^9, 3.960226737327704*^9}, {3.960227691632032*^9, 
+  3.9602276940425053`*^9}},ExpressionUUID->"c6d8dee7-fc73-4e6f-a9ef-\
+bb14f20e7b5a"],
+
+Cell["\<\
+I really ought to add a super-simple example to illustrate the general case, \
+such as the neural that Grus used to solve XOR or Fizz Buzz in his rapid-fire \
+live coding session, https://youtu.be/o64FV-ez6Gw.\
+\>", "Text",
+ CellChangeTimes->{{3.960227705178688*^9, 3.960227763769486*^9}, {
+  3.960227825494486*^9, 
+  3.960227912965472*^9}},ExpressionUUID->"b5c4e698-eb05-4696-9acf-\
+ae96332d88b2"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -2106,6 +2131,10 @@ Cell[51000, 1533, 9170, 267, 1282, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91
 Cell[CellGroupData[{
 Cell[60207, 1805, 679, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
 Cell[60889, 1817, 7664, 227, 919, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68590, 2049, 722, 10, 82, "Section",ExpressionUUID->"c6d8dee7-fc73-4e6f-a9ef-bb14f20e7b5a"],
+Cell[69315, 2061, 408, 8, 96, "Text",ExpressionUUID->"b5c4e698-eb05-4696-9acf-ae96332d88b2"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
