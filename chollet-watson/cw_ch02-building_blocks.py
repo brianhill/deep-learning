@@ -4,13 +4,14 @@ from keras import layers, activations
 # import matplotlib.pyplot as plt
 import numpy as np
 
-# PDF pages refer to MEAP e3v4
-# Subtract 5 to get the printed page numer.
-# Or add 5 to get back to the PDF page number.
-# Chapter 2 is printed pp. 21-80, inclusive or
-# PDF pp. 26-85, inclusive.
+# PDF pages refer to MEAP e3v4. To purchase,
+# see https://www.manning.com/books/deep-learning-with-python-third-edition
+# Given a PDF page, subtract 5 to get the printed page
+# number, or add 5 to get back to the PDF page number.
 
-# PDF p. 28
+# Chapter 2 is printed pp. 21-80, inclusive (or PDF pp. 26-85).
+
+# PDF p. 27 - Training a neural network for digit recognition
 
 # Creates a local cache at ~/.keras/datasets/mnist.npz
 (original_train_images, train_labels), (test_images, test_labels) = mnist.load_data()
@@ -40,13 +41,13 @@ test_images = test_images.astype('float32') / 255
 # print(predictions[0][7])
 # print(test_labels[0])
 
-# PDF p. 36
+# PDF p. 35 - Display a training image
 
 # digit = original_train_images[4]
 # plt.imshow(digit, cmap=plt.cm.binary)
 # plt.show()
 
-# PDF p. 41
+# PDF p. 41 - Tensor operations
 
 array_3x2 = np.array([[1, 2],
                       [3, -4],
