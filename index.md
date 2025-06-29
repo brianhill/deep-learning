@@ -2,7 +2,7 @@
 
 ## Mathematics for Deep Learning
 
-[This little write-up](./mma-notes/MathematicsForDeepLearning.nb.pdf) is barely started, but the intent is to document &mdash; with easy-to-read but rigorous notation &mdash; the multi-variable calculus commonly used in back-propagation. It is shockingly straightforward once you take the time to write it out.
+[My Mathematics for Deep Learning](./mma-notes/MathematicsForDeepLearning.nb.pdf) notes are intended to document &mdash; with easy-to-read but rigorous notation &mdash; the multi-variable calculus commonly used in back-propagation. The final answer is shockingly simple. However, the apparent simplicity depends on some sweet notation.
 
 ## Chollet &amp; Watson Notes
 
