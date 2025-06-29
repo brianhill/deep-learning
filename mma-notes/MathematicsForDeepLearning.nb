@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      6737,        199]
-NotebookOptionsPosition[      5689,        171]
-NotebookOutlinePosition[      6087,        187]
-CellTagsIndexPosition[      6044,        184]
+NotebookDataLength[      9980,        294]
+NotebookOptionsPosition[      8655,        260]
+NotebookOutlinePosition[      9107,        278]
+CellTagsIndexPosition[      9064,        275]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -42,36 +42,31 @@ Cell["Inputs and Output", "Section",
 Cell[TextData[{
  "Let ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "2d26f51d-5c72-4326-8f57-34c0ea0a288e"],
  " denote an input vector. For the moment we\[CloseCurlyQuote]ll leave its \
 dimension and how we index its components unspecified.\n\nSimilarly, let ",
  Cell[BoxData[
-  FormBox["y", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["y", TraditionalForm]],ExpressionUUID->
   "6b4e0c42-4511-4ec7-ad70-36f2131c1ad6"],
  " denote the output vector corresponding to the input vector, ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "250457cf-5c8a-4ad7-b361-6ca2cb57fdf0"],
  ". Its dimension and how we index its components will for a moment also \
-remain unspecified, but note that the dimension of ",
+remain unspecified, but note that the dimensions of ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "8296064e-2058-435e-9abc-014ed815fa82"],
  " and ",
  Cell[BoxData[
-  FormBox["y", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["y", TraditionalForm]],ExpressionUUID->
   "c6bd2fb5-bf88-4b12-a170-939cf79de5ec"],
  " are generally completely different."
 }], "Text",
  CellChangeTimes->{{3.960210589113415*^9, 3.96021076365909*^9}, {
-  3.960211190708988*^9, 
-  3.960211191501491*^9}},ExpressionUUID->"dedf91e1-aab3-423d-a4bb-\
+   3.960211190708988*^9, 3.960211191501491*^9}, 
+   3.960212386936892*^9},ExpressionUUID->"dedf91e1-aab3-423d-a4bb-\
 b74036454801"]
 }, Open  ]],
 
@@ -86,8 +81,7 @@ Cell["Neural Nets and Layers", "Section",
 Cell[TextData[{
  "We will conceive of a neural net as consisting of ",
  Cell[BoxData[
-  FormBox["L", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["L", TraditionalForm]],ExpressionUUID->
   "c43f99b5-0908-492d-a748-c389cd547873"],
  " layers. Each layer takes an input vector and produces an output vector. \
 Then\n\n",
@@ -113,64 +107,161 @@ Then\n\n",
        RowBox[{"(", "1", ")"}]], "\[LeftArrow]", " ", 
       SuperscriptBox["x", 
        RowBox[{"(", "0", ")"}]]}], "=", "x"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "ddf99c01-11f8-4941-a1af-bf43aa29359f"],
+  ExpressionUUID->"ddf99c01-11f8-4941-a1af-bf43aa29359f"],
  "\n\nThe parenthesized superscripts denote layer numbers, not exponents. A \
 net with one layer (",
  Cell[BoxData[
   FormBox[
-   RowBox[{"L", "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"L", "=", "1"}], TraditionalForm]],ExpressionUUID->
   "dcd30476-8b39-4d6d-b5e9-5ff757eb4a91"],
- ") has one input vector, one output vector, and no vectors in between those. \
-An ",
+ ") has two vectors, consisting of one input vector, one output vector, and \
+no vectors in between. An ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"L", "=", "4"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"L", "=", "4"}], TraditionalForm]],ExpressionUUID->
   "58a922aa-a67d-457c-b584-02db741e0202"],
  " neural net has five vectors ",
  Cell[BoxData[
   FormBox[
    SuperscriptBox["x", 
-    RowBox[{"(", "0", ")"}]], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    RowBox[{"(", "0", ")"}]], TraditionalForm]],ExpressionUUID->
   "be049d37-6a0e-4bd7-b915-e68b8ed2c3e7"],
  " to ",
  Cell[BoxData[
   FormBox[
    SuperscriptBox["x", 
-    RowBox[{"(", "4", ")"}]], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    RowBox[{"(", "4", ")"}]], TraditionalForm]],ExpressionUUID->
   "6762f0fc-892d-44f5-b867-f0cd24e99778"],
  ".\n\nWe still haven\[CloseCurlyQuote]t said what the dimensions of the \
 vectors are or how we index their components, but again note that the \
-dimensions of the various  ",
+dimensions of the various ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SuperscriptBox["x", 
      RowBox[{"(", "l", ")"}]], ",", " ", 
     RowBox[{"l", "=", "0"}], ",", "...", ",", " ", "l"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "c17cf5dd-0f24-486f-a436-107d15b6e9fa"],
+  ExpressionUUID->"c17cf5dd-0f24-486f-a436-107d15b6e9fa"],
  " are in general unrelated."
 }], "Text",
- CellChangeTimes->{{3.960210589113415*^9, 
-  3.960211274591279*^9}},ExpressionUUID->"1ea80b58-0c7b-4119-bd6f-\
+ CellChangeTimes->{{3.960210589113415*^9, 3.960211274591279*^9}, 
+   3.960212398196123*^9, {3.960212436298974*^9, 
+   3.960212446878635*^9}},ExpressionUUID->"1ea80b58-0c7b-4119-bd6f-\
 03fbcdd61d0f"]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell["Functions to Represent Layer Operations", "Section",
  CellChangeTimes->{{3.960210613713471*^9, 3.96021061665407*^9}, {
   3.9602107762327623`*^9, 3.9602107834038067`*^9}, {3.960211297288374*^9, 
   3.9602113169963503`*^9}},ExpressionUUID->"d2e3683d-0a4f-49b2-a12f-\
-21cfe94d02ea"]
+21cfe94d02ea"],
+
+Cell[TextData[{
+ "The ",
+ Cell[BoxData[
+  FormBox["l", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "20970f42-bc2a-4cdc-83d2-2f05b854d6f9"],
+ "th function representing the layer ",
+ Cell[BoxData[
+  FormBox["l", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7a0cac5e-dcc3-47ca-9baa-b2ac5a6a762b"],
+ " operation transforms ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", 
+    RowBox[{"(", "l", ")"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "047fa44e-0d79-4a76-aaeb-fef92b3e0847"],
+ " to ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", 
+    RowBox[{"(", 
+     RowBox[{"l", "+", "1"}], ")"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e6afa800-cd45-48d9-aa4b-22161b176eed"],
+ ". For clarity \[LongDash] not compactness \[LongDash] \
+we\[CloseCurlyQuote]ll write this operation as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", 
+     RowBox[{"(", 
+      RowBox[{"l", "+", "1"}], ")"}]], "=", 
+    RowBox[{
+     SuperscriptBox["f", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"l", "+", "1"}], "\[LeftArrow]", "l"}], ")"}]], "(", 
+     SuperscriptBox["x", 
+      RowBox[{"(", "l", ")"}]], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "69df7da2-a14c-4814-b2b3-307ff156cd85"],
+ ".\n\nIn a neural net with ",
+ Cell[BoxData[
+  FormBox["L", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "aa6198ec-4803-49ee-b092-398ab95905f5"],
+ " layers, there are ",
+ Cell[BoxData[
+  FormBox["L", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "56b5c773-9149-4048-b1ad-b4a00ae7fbb3"],
+ " functions ",
+ Cell[BoxData[
+  FormBox["f", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f099bcb6-5b00-48ab-8264-bf3c53d4ae21"],
+ ". The one that operates on the input vector is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["f", 
+     RowBox[{"(", 
+      RowBox[{"1", "\[LeftArrow]", "0"}], ")"}]], "(", 
+    SuperscriptBox["x", 
+     RowBox[{"(", "l", ")"}]], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "946e2979-e18a-4a77-80b8-5d763bf3182d"],
+ ", and the one producing the output vector is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["f", 
+     RowBox[{"(", 
+      RowBox[{"L", "\[LeftArrow]", 
+       RowBox[{"L", "-", "1"}]}], ")"}]], "(", 
+    SuperscriptBox["x", 
+     RowBox[{"(", 
+      RowBox[{"L", "-", "1"}], ")"}]], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0f2bad36-e448-463d-b891-eca9f1997e33"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.960210589113415*^9, 3.960211274591279*^9}, 
+   3.960212398196123*^9, {3.960212436298974*^9, 3.9602127509705257`*^9}, {
+   3.960212785369664*^9, 
+   3.9602127859221888`*^9}},ExpressionUUID->"baf636d6-d21b-4535-ad68-\
+cd321dbdc610"]
+}, Open  ]],
+
+Cell["Parameters", "Section",
+ CellChangeTimes->{{3.960210613713471*^9, 3.96021061665407*^9}, {
+  3.9602107762327623`*^9, 3.9602107834038067`*^9}, {3.960211297288374*^9, 
+  3.9602113169963503`*^9}, {3.9602127607953663`*^9, 
+  3.960212762116338*^9}},ExpressionUUID->"4d59a828-0c4c-452d-9579-\
+7644381e26bc"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{808, 911},
 WindowMargins->{{Automatic, 572}, {Automatic, 98}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
 FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (December 26, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"69ab9a22-22f7-4337-bd04-462315d24ce3"
@@ -192,13 +283,17 @@ Cell[CellGroupData[{
 Cell[775, 29, 184, 3, 84, "Chapter",ExpressionUUID->"aff5e47d-4917-464a-9cec-57daeec1df85"],
 Cell[CellGroupData[{
 Cell[984, 36, 161, 3, 82, "Section",ExpressionUUID->"085e2d64-2a6f-4906-96ab-3571b62f9c82"],
-Cell[1148, 41, 1303, 33, 206, "Text",ExpressionUUID->"dedf91e1-aab3-423d-a4bb-b74036454801"]
+Cell[1148, 41, 1173, 28, 206, "Text",ExpressionUUID->"dedf91e1-aab3-423d-a4bb-b74036454801"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2488, 79, 219, 4, 82, "Section",ExpressionUUID->"70cb250e-1a8a-47fe-847a-9a70f75cebda"],
-Cell[2710, 85, 2652, 75, 339, "Text",ExpressionUUID->"1ea80b58-0c7b-4119-bd6f-03fbcdd61d0f"]
+Cell[2358, 74, 219, 4, 82, "Section",ExpressionUUID->"70cb250e-1a8a-47fe-847a-9a70f75cebda"],
+Cell[2580, 80, 2528, 69, 339, "Text",ExpressionUUID->"1ea80b58-0c7b-4119-bd6f-03fbcdd61d0f"]
 }, Open  ]],
-Cell[5377, 163, 284, 4, 82, "Section",ExpressionUUID->"d2e3683d-0a4f-49b2-a12f-21cfe94d02ea"]
+Cell[CellGroupData[{
+Cell[5145, 154, 284, 4, 82, "Section",ExpressionUUID->"d2e3683d-0a4f-49b2-a12f-21cfe94d02ea"],
+Cell[5432, 160, 2874, 88, 153, "Text",ExpressionUUID->"baf636d6-d21b-4535-ad68-cd321dbdc610"]
+}, Open  ]],
+Cell[8321, 251, 306, 5, 82, "Section",ExpressionUUID->"4d59a828-0c4c-452d-9579-7644381e26bc"]
 }, Open  ]]
 }, Open  ]]
 }
