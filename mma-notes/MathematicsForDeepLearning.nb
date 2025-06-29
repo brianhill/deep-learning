@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     71752,       2122]
-NotebookOptionsPosition[     69062,       2064]
-NotebookOutlinePosition[     69514,       2082]
-CellTagsIndexPosition[     69471,       2079]
+NotebookDataLength[     71283,       2107]
+NotebookOptionsPosition[     68593,       2049]
+NotebookOutlinePosition[     69045,       2067]
+CellTagsIndexPosition[     69002,       2064]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1537,19 +1537,16 @@ called the rank. When they have 0 indices, we call them scalars. When they \
 have 1 index, we call them vectors. When they have 2 indices, we call them \
 matrices. When they have ",
  Cell[BoxData[
-  FormBox["r", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["r", TraditionalForm]],ExpressionUUID->
   "f13df08f-e435-4992-b058-c1e71f35e33e"],
  " indices with ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"r", ">", "2"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"r", ">", "2"}], TraditionalForm]],ExpressionUUID->
   "f1758bc2-39a2-481e-aa56-b12450a88e42"],
  ", we say tensor of rank ",
  Cell[BoxData[
-  FormBox["r", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["r", TraditionalForm]],ExpressionUUID->
   "83318e3f-0aa2-41a9-b0b1-99bd1be62db4"],
  ", but these are conventions. All these are tensors just with different \
 ranks, and the ones we have immediate use for are matrices.\n\nWith matrices \
@@ -1557,8 +1554,7 @@ at our disposal, the expressions that are already getting messy in even the \
 ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"L", "=", "4"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"L", "=", "4"}], TraditionalForm]],ExpressionUUID->
   "8078444f-c8bd-4d81-bf38-b3e6dd32a79e"],
  " case are just matrix multiplications.\n\nWe will define\n\n",
  Cell[BoxData[
@@ -1585,13 +1581,11 @@ at our disposal, the expressions that are already getting messy in even the \
         RowBox[{"l", "-", "1"}]], 
        RowBox[{"(", 
         RowBox[{"l", "-", "1"}], ")"}]]}]]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "1be0316c-82a0-4259-87f2-a31f8a674b8d"],
+  ExpressionUUID->"1be0316c-82a0-4259-87f2-a31f8a674b8d"],
  "\n\nThis will hide the plethora of partial derivatives with respect to the ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"x", "'"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"x", "'"}], TraditionalForm]],ExpressionUUID->
   "9675f55f-131f-47d9-950d-0c959f502af7"],
  "s. For example, \n\n",
  Cell[BoxData[
@@ -1635,8 +1629,7 @@ at our disposal, the expressions that are already getting messy in even the \
       RowBox[{"\[PartialD]", 
        SubsuperscriptBox["\[Alpha]", 
         SubscriptBox["\[Mu]", "1"], 
-        RowBox[{"(", "1", ")"}]]}]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+        RowBox[{"(", "1", ")"}]]}]]}]}], TraditionalForm]],ExpressionUUID->
   "7e330695-5a95-4f83-9579-20c7584efadc"],
  "\n\nbecomes\n\n",
  Cell[BoxData[
@@ -1672,8 +1665,7 @@ at our disposal, the expressions that are already getting messy in even the \
       RowBox[{"\[PartialD]", 
        SubsuperscriptBox["\[Alpha]", 
         SubscriptBox["\[Mu]", "1"], 
-        RowBox[{"(", "1", ")"}]]}]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+        RowBox[{"(", "1", ")"}]]}]]}]}], TraditionalForm]],ExpressionUUID->
   "b6a814f6-8cb7-4754-b9d4-8260d0f4a77e"],
  "\n\nLet\[CloseCurlyQuote]s keep going and also hide the partial derivatives \
 with respect to the \[Alpha]\[CloseCurlyQuote]s by defining\n\n",
@@ -1695,8 +1687,7 @@ with respect to the \[Alpha]\[CloseCurlyQuote]s by defining\n\n",
      RowBox[{"\[PartialD]", 
       SubsuperscriptBox["\[Alpha]", 
        SubscriptBox["\[Mu]", "1"], 
-       RowBox[{"(", "1", ")"}]]}]]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       RowBox[{"(", "1", ")"}]]}]]}], TraditionalForm]],ExpressionUUID->
   "f8e826c9-0e6b-4324-9e61-0be723b4f0df"],
  "\n\nand\n\n",
  Cell[BoxData[
@@ -1717,8 +1708,7 @@ with respect to the \[Alpha]\[CloseCurlyQuote]s by defining\n\n",
      RowBox[{"\[PartialD]", 
       SubsuperscriptBox["\[Alpha]", 
        SubscriptBox["\[Mu]", "1"], 
-       RowBox[{"(", "1", ")"}]]}]]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       RowBox[{"(", "1", ")"}]]}]]}], TraditionalForm]],ExpressionUUID->
   "228d72ee-864b-4cc7-ac32-87b480e39482"],
  "\n\nPutting those two definitions in, we have\n\n",
  Cell[BoxData[
@@ -1749,8 +1739,7 @@ with respect to the \[Alpha]\[CloseCurlyQuote]s by defining\n\n",
        SubscriptBox["\[Mu]", "1"]}], 
       RowBox[{"(", 
        RowBox[{"2", "\[LeftArrow]", "1"}], ")"}]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "abde076d-65e1-4f85-8c56-7b666de97aaa"],
+  ExpressionUUID->"abde076d-65e1-4f85-8c56-7b666de97aaa"],
  "\n\n",
  StyleBox["Because people that do matrix multiplications all the time...",
   FontWeight->"Bold"],
@@ -1758,30 +1747,26 @@ with respect to the \[Alpha]\[CloseCurlyQuote]s by defining\n\n",
 index in an expression is a free index (in this case, ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["i", "4"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["i", "4"], TraditionalForm]],ExpressionUUID->
   "37e0df6f-390e-4a17-8d1b-17bfbcb2cc34"],
  "), (3) that the right-most index in an expression is also free (in this \
 case, ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["\[Mu]", "1"], TraditionalForm]],ExpressionUUID->
   "5a1d1dff-c0a1-4fa7-93be-bec04521dced"],
  "), and (4) that all the in-between indices are repeated twice, are dummy \
 indices (in this case, ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["i", "3"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["i", "3"], TraditionalForm]],ExpressionUUID->
   "d146303d-2617-4bc9-ba68-90dca230cb80"],
  " and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["i", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["i", "2"], TraditionalForm]],ExpressionUUID->
   "a721c2b4-4a1b-402f-98ea-5ae953c3c37b"],
- ") and are summed over all their allowed values. So ",
+ "), and are summed over all their allowed values. So ",
  StyleBox["...they",
   FontWeight->"Bold"],
  " ",
@@ -1804,15 +1789,15 @@ indices (in this case, ",
      SuperscriptBox["O", 
       RowBox[{"(", 
        RowBox[{"2", "\[LeftArrow]", "1"}], ")"}]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "b11e6b1a-d090-4a5a-aeab-e50752403451"]
+  ExpressionUUID->"b11e6b1a-d090-4a5a-aeab-e50752403451"]
 }], "Text",
  CellChangeTimes->{{3.960222836975514*^9, 3.960222964123806*^9}, {
    3.960223347124556*^9, 3.960223911107502*^9}, {3.960223943433166*^9, 
    3.960224571790263*^9}, {3.9602246156838512`*^9, 3.960224721542321*^9}, 
    3.960224783652788*^9, {3.960226080668881*^9, 3.9602261565348253`*^9}, {
    3.960226613529842*^9, 3.960226632594508*^9}, {3.96022704152629*^9, 
-   3.960227060893491*^9}},ExpressionUUID->"1b00cc85-d511-4f1a-91ba-\
+   3.960227060893491*^9}, 
+   3.960227557062517*^9},ExpressionUUID->"1b00cc85-d511-4f1a-91ba-\
 a814ece38b3b"]
 }, Open  ]],
 
@@ -2116,11 +2101,11 @@ Cell[31915, 954, 18470, 564, 1477, "Text",ExpressionUUID->"1dff31d3-5cc0-41c9-99
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[50422, 1523, 575, 8, 82, "Section",ExpressionUUID->"75cd5bdb-3106-4375-8676-57388a65c93f"],
-Cell[51000, 1533, 9639, 282, 1282, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91ba-a814ece38b3b"]
+Cell[51000, 1533, 9170, 267, 1282, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91ba-a814ece38b3b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60676, 1820, 679, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
-Cell[61358, 1832, 7664, 227, 919, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
+Cell[60207, 1805, 679, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
+Cell[60889, 1817, 7664, 227, 919, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
