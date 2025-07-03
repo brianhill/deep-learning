@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     73868,       2120]
-NotebookOptionsPosition[     70725,       2054]
-NotebookOutlinePosition[     71176,       2072]
-CellTagsIndexPosition[     71133,       2069]
+NotebookDataLength[     76872,       2182]
+NotebookOptionsPosition[     73729,       2116]
+NotebookOutlinePosition[     74180,       2134]
+CellTagsIndexPosition[     74137,       2131]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2022,31 +2022,93 @@ Appendix \[LongDash] Motivating the Ordinary and Multi-Variable Chain Rule\
   3.960384810106347*^9}},ExpressionUUID->"1fb9a8a3-a3e2-44d6-ba02-\
 6ae94ba335b3"],
 
-Cell["\<\
-I could add some motivation for the one multi-variable calculus result that \
+Cell[TextData[{
+ "I could add some motivation for the one multi-variable calculus result that \
 was required for the derivation, in which case the notes would only require \
 ordinary calculus as a prerequisite. In fact, I could even motivate the \
 ordinary chain rule, the proof of which requires a good understanding of \
-limits.
-
-For now, I will refer you first to 3Blue1Brown (Grant Sanderson) who has a \
-nice explanation of the ordinary chain rule: https://youtu.be/YG15m2VwSjA. \
-After having digested that, when Sanderson pictorially explains the same \
-material that I am explaining in this writeup, he motivates the \
-multi-variable chain rule: https://youtu.be/tIeHLnjs5U8.
-
+limits.\n\nFor now, I will refer you first to 3Blue1Brown (Grant Sanderson) \
+who has a nice explanation of the ordinary chain rule: \
+https://youtu.be/YG15m2VwSjA. After having digested that, when Sanderson \
+pictorially explains the same material that I am explaining in this writeup, \
+he motivates the multi-variable chain rule: https://youtu.be/tIeHLnjs5U8.\n\n\
 It is important to be able to fluently go back and forth between precise \
 notation and pictorial understandings if you want more than a hand-waving \
 understanding of how backpropagation works, and if you want to be able to \
-code backpropagation yourself without relying Keras, TensorFlow, or PyTorch.\
-\>", "Text",
+code backpropagation yourself without relying Keras, TensorFlow, or PyTorch.\n\
+\nLet me do a bit of multi-variable chain rule motivation:\n\nEssentially, \
+the multivariable chain rule says that if you go north 100\[CloseCurlyQuote] \
+and are forced up 200\[CloseCurlyQuote] in elevation and then west 100\
+\[CloseCurlyQuote] and forced up another 300\[CloseCurlyQuote] in elevation, \
+then you could alternatively have gone northwest 141.4\[CloseCurlyQuote] and \
+you would necessarily have been forced up 200\[CloseCurlyQuote]+300\
+\[CloseCurlyQuote]=500\[CloseCurlyQuote] in elevation. There are perverse \
+functions for which such perfectly intuitive addition becomes troublesome, \
+but let\[CloseCurlyQuote]s ignore those.\n\nTo be somewhat more general, the \
+multivariable chain rule says that motions along perpendicular directions \
+(called independent variables) simply add in their final effect. This \
+addition is captured in sums over however many independent variables there \
+are in the multivariable chain rule. This is why we had the sum over ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["i", "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ec149d01-7330-4b3c-ac6d-6e985a9cc04c"],
+ " when we wrote\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[PartialD]", 
+      SubsuperscriptBox["x", 
+       SubscriptBox["i", "4"], 
+       RowBox[{"(", "4", ")"}]]}], 
+     RowBox[{"\[PartialD]", 
+      SubsuperscriptBox["\[Alpha]", 
+       SubscriptBox["\[Mu]", "2"], 
+       RowBox[{"(", "2", ")"}]]}]], "=", 
+    RowBox[{
+     UnderscriptBox["\[Sum]", 
+      SubscriptBox["i", "3"]], 
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[PartialD]", 
+        SubsuperscriptBox["f", 
+         SubscriptBox["i", "4"], 
+         RowBox[{"(", 
+          RowBox[{"4", "\[LeftArrow]", "3"}], ")"}]]}], 
+       RowBox[{"\[PartialD]", 
+        SubsuperscriptBox["x", 
+         SubscriptBox["i", "3"], 
+         RowBox[{"(", "2", ")"}]]}]], 
+      FractionBox[
+       RowBox[{"\[PartialD]", 
+        SubsuperscriptBox["f", 
+         SubscriptBox["i", "3"], 
+         RowBox[{"(", 
+          RowBox[{"3", "\[LeftArrow]", "2"}], ")"}]]}], 
+       RowBox[{"\[PartialD]", 
+        SubsuperscriptBox["\[Alpha]", 
+         SubscriptBox["\[Mu]", "2"], 
+         RowBox[{"(", "2", ")"}]]}]]}]}]}], TraditionalForm]],ExpressionUUID->
+  "106c3c8a-c6db-4dc4-847d-6afa8fef3d50"],
+ "\n\nMultivariable calculus is awesome, and the high points are Gauss\
+\[CloseCurlyQuote] Theorem and Stokes\[CloseCurlyQuote] Theorem, but you don\
+\[CloseCurlyQuote]t need either theorem for backpropagation. You only need \
+the multi-variable chain rule."
+}], "Text",
  CellChangeTimes->{{3.960227705178688*^9, 3.960227763769486*^9}, {
   3.960227825494486*^9, 3.960227912965472*^9}, {3.96025579867866*^9, 
   3.960255810798827*^9}, {3.9603840183693457`*^9, 3.960384032561428*^9}, {
   3.9603841028216333`*^9, 3.960384144341031*^9}, {3.960384300514182*^9, 
   3.960384510583403*^9}, {3.9603845571489677`*^9, 3.96038463905264*^9}, {
-  3.960384825093582*^9, 
-  3.960384881528723*^9}},ExpressionUUID->"c4647a26-ecb4-45a9-b9b9-\
+  3.960384825093582*^9, 3.960384881528723*^9}, {3.96049146201377*^9, 
+  3.960491623598905*^9}, {3.96049166451693*^9, 3.960491692585865*^9}, {
+  3.960491723323285*^9, 3.9604917991097383`*^9}, {3.960491833631977*^9, 
+  3.960491909949888*^9}, {3.9604919399976673`*^9, 3.960491956833458*^9}, {
+  3.9604920503025627`*^9, 3.960492104035009*^9}, {3.960492145796837*^9, 
+  3.960492155799951*^9}, {3.960492202397065*^9, 
+  3.960492203536694*^9}},ExpressionUUID->"c4647a26-ecb4-45a9-b9b9-\
 74645c321b68"]
 }, Open  ]]
 }, Open  ]]
@@ -2118,7 +2180,7 @@ Cell[67813, 1995, 446, 8, 96, "Text",ExpressionUUID->"b5c4e698-eb05-4696-9acf-ae
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[68296, 2008, 925, 14, 129, "Section",ExpressionUUID->"1fb9a8a3-a3e2-44d6-ba02-6ae94ba335b3"],
-Cell[69224, 2024, 1461, 25, 424, "Text",ExpressionUUID->"c4647a26-ecb4-45a9-b9b9-74645c321b68"]
+Cell[69224, 2024, 4465, 87, 991, "Text",ExpressionUUID->"c4647a26-ecb4-45a9-b9b9-74645c321b68"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
