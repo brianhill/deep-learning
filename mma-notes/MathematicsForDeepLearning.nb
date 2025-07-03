@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     73770,       2119]
-NotebookOptionsPosition[     70627,       2053]
-NotebookOutlinePosition[     71078,       2071]
-CellTagsIndexPosition[     71035,       2068]
+NotebookDataLength[     73868,       2120]
+NotebookOptionsPosition[     70725,       2054]
+NotebookOutlinePosition[     71176,       2072]
+CellTagsIndexPosition[     71133,       2069]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1434,11 +1434,10 @@ expressions, respectively.\n\nNotice that for ",
  Cell[BoxData[
   FormBox["x", TraditionalForm]],ExpressionUUID->
   "b1bbf545-885f-4936-af2e-9385a88661e2"],
- " derivatives and still one \[Alpha] derivative. The ",
+ " derivatives and still one \[Alpha] derivative. \n\nThe ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"L", "=", "4"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"L", "=", "4"}], TraditionalForm]],ExpressionUUID->
   "7dfcf42d-5105-413b-a562-cc2184b0daf2"],
  " pattern is that you have ",
  Cell[BoxData[
@@ -1452,12 +1451,12 @@ expressions, respectively.\n\nNotice that for ",
  " derivatives, and finally one \[Alpha] derivative."
 }], "Text",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBmIQvUz9pGFr41vHSxHMySD6SsCddDDtOT0TRMsc2VsE
+1:eJxTTMoPSmViYGAQAWIQvUz9pGFr41vHSxHMySD6SsCddDDtOT0TRMsc2VsE
 omfLW/eAaL794otA9AyOrFUgeoV/zjoQvSDwwAkQXb5B4QqIPnTh7S0QrZex
 7R6I9juo8QNER/Tu+wOiP2x/w9gGpKf4CrGBaC/jw2Ba7dpcYRCdk5epA6IL
 WtQMQTSf8CtrEG35UNIBRDuIvmgA0X37VZeDaKlz3YdAtHfp9eMgWsw37QyI
 DqyYmN8BpFmsFoHpbbZHOa8C6T+fmvlB9Itvk0RBdIvAFTAdY6svDaL3ZejI
-gmiPZKY9YPnjgvtANAD05J7H
+gmiPZKY9YPnjgvtAdGbYNBXOpreOaySXgmkAGNalQQ==
   "],ExpressionUUID->"1dff31d3-5cc0-41c9-9943-f4be12b35e54"]
 }, Open  ]],
 
@@ -1491,14 +1490,14 @@ matrices. When they have ",
   FormBox["r", TraditionalForm]],ExpressionUUID->
   "83318e3f-0aa2-41a9-b0b1-99bd1be62db4"],
  ", but these are conventions. All these are tensors, just with different \
-ranks, and the ones we have immediate use for are the rank 2 tensors, e.g., \
+ranks, and the ones we have immediate use for are the rank 2 tensors, aka, \
 matrices.\n\nWith matrices at our disposal, the expressions that are already \
 getting messy in even the ",
  Cell[BoxData[
   FormBox[
    RowBox[{"L", "=", "4"}], TraditionalForm]],ExpressionUUID->
   "8078444f-c8bd-4d81-bf38-b3e6dd32a79e"],
- " case are just matrix multiplications.\n\nWe will define\n\n",
+ " case become matrix multiplications. We will define\n\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -1698,8 +1697,8 @@ case, ",
   FormBox[
    SubscriptBox["\[Mu]", "1"], TraditionalForm]],ExpressionUUID->
   "5a1d1dff-c0a1-4fa7-93be-bec04521dced"],
- "), and (4) that all the in-between indices are repeated twice, are dummy \
-indices (in this case, ",
+ "), and (4a) that all the in-between indices are repeated twice, (4b) are \
+dummy indices (in this case, ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["i", "3"], TraditionalForm]],ExpressionUUID->
@@ -1709,8 +1708,8 @@ indices (in this case, ",
   FormBox[
    SubscriptBox["i", "2"], TraditionalForm]],ExpressionUUID->
   "a721c2b4-4a1b-402f-98ea-5ae953c3c37b"],
- "), and are summed over all their allowed values. Knowing this pattern, they \
-",
+ "), and (4c) are summed over all their allowed values. Knowing this pattern, \
+they ",
  StyleBox["...don\[CloseCurlyQuote]t bother writing any indices at all!",
   FontWeight->"Bold"],
  " With those conventions, we have simply\n\n",
@@ -1740,7 +1739,9 @@ indices (in this case, ",
    3.960227060893491*^9}, 3.960227557062517*^9, {3.960255600651552*^9, 
    3.960255606293036*^9}, {3.960257124601965*^9, 3.960257125501338*^9}, {
    3.960383753490285*^9, 3.9603838163258038`*^9}, {3.960383882815125*^9, 
-   3.960383904740909*^9}},ExpressionUUID->"1b00cc85-d511-4f1a-91ba-\
+   3.960383904740909*^9}, {3.960490173568108*^9, 3.960490201572585*^9}, {
+   3.960490246858769*^9, 
+   3.960490258501227*^9}},ExpressionUUID->"1b00cc85-d511-4f1a-91ba-\
 a814ece38b3b"]
 }, Open  ]],
 
@@ -2101,23 +2102,23 @@ Cell[22725, 664, 356, 10, 65, "Subtitle",ExpressionUUID->"ad06e963-50b1-486b-84f
 Cell[23084, 676, 8338, 258, 629, "Text",ExpressionUUID->"393f63ea-948e-483c-b0e6-3c44ba4ad01c"],
 Cell[CellGroupData[{
 Cell[31447, 938, 524, 8, 82, "Section",ExpressionUUID->"9084bd53-e35a-44a3-a3e6-e66efe8a0eba"],
-Cell[31974, 948, 16642, 512, 1450, "Text",ExpressionUUID->"1dff31d3-5cc0-41c9-9943-f4be12b35e54"]
+Cell[31974, 948, 16635, 511, 1477, "Text",ExpressionUUID->"1dff31d3-5cc0-41c9-9943-f4be12b35e54"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48653, 1465, 575, 8, 82, "Section",ExpressionUUID->"75cd5bdb-3106-4375-8676-57388a65c93f"],
-Cell[49231, 1475, 9392, 268, 1337, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91ba-a814ece38b3b"]
+Cell[48646, 1464, 575, 8, 82, "Section",ExpressionUUID->"75cd5bdb-3106-4375-8676-57388a65c93f"],
+Cell[49224, 1474, 9497, 270, 1282, "Text",ExpressionUUID->"1b00cc85-d511-4f1a-91ba-a814ece38b3b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58660, 1748, 736, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
-Cell[59399, 1760, 7433, 215, 946, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
+Cell[58758, 1749, 736, 10, 82, "Section",ExpressionUUID->"ceba921a-21da-4f3c-b580-3f5ce9d35e24"],
+Cell[59497, 1761, 7433, 215, 946, "Text",ExpressionUUID->"880c8be9-ef56-4c10-af63-324cb9e1365d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66869, 1980, 843, 12, 82, "Section",ExpressionUUID->"c6d8dee7-fc73-4e6f-a9ef-bb14f20e7b5a"],
-Cell[67715, 1994, 446, 8, 96, "Text",ExpressionUUID->"b5c4e698-eb05-4696-9acf-ae96332d88b2"]
+Cell[66967, 1981, 843, 12, 82, "Section",ExpressionUUID->"c6d8dee7-fc73-4e6f-a9ef-bb14f20e7b5a"],
+Cell[67813, 1995, 446, 8, 96, "Text",ExpressionUUID->"b5c4e698-eb05-4696-9acf-ae96332d88b2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[68198, 2007, 925, 14, 129, "Section",ExpressionUUID->"1fb9a8a3-a3e2-44d6-ba02-6ae94ba335b3"],
-Cell[69126, 2023, 1461, 25, 424, "Text",ExpressionUUID->"c4647a26-ecb4-45a9-b9b9-74645c321b68"]
+Cell[68296, 2008, 925, 14, 129, "Section",ExpressionUUID->"1fb9a8a3-a3e2-44d6-ba02-6ae94ba335b3"],
+Cell[69224, 2024, 1461, 25, 424, "Text",ExpressionUUID->"c4647a26-ecb4-45a9-b9b9-74645c321b68"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
