@@ -15,6 +15,7 @@ So far I have learned this stuff from Chapters 18 and 19 of Joel Grus, *Data Sci
 ## Chollet &amp; Watson Notes
 
 * Chapter 2 [Building Blocks](./chollet-watson/cw_ch02-building_blocks.py)
+* Chapter 3 [Python Frameworks](./chollet-watson/cw_ch03-python_frameworks.py)
 
 ## Raschka Notes
 
