@@ -4,6 +4,9 @@ from keras import layers, activations
 # import matplotlib.pyplot as plt
 import numpy as np
 
+# Grus Chapter 19 is a better place to learn the material
+# in Chollet & Watson Chapter 2.
+
 # PDF pages refer to MEAP e3v4. To purchase,
 # see https://www.manning.com/books/deep-learning-with-python-third-edition
 # Given a PDF page, subtract 5 to get the printed page
@@ -63,3 +66,21 @@ relu_3x4 = activations.relu(array_3x4)
 print(relu_3x4)
 
 # PDF p. 42 - Element-wise operations
+
+# PDF p. 46 - Tensor product
+
+# PDF p. 50 - Tensor reshaping
+
+# PDF p. 51 - Geometric interpretation of tensor operations
+
+# PDF p. 56 - A geometric interpretation of deep learning
+
+# PDF p. 57 - The engine of neural networks: gradient-based optimization
+
+# PDF p. 63 - Stochastic gradient descent
+
+# PDF p. 68 - Chaining derivatives - the backpropagation algorithm
+
+# PDF p. 76 - Looking back at our first example
+
+# PDF p. 78 - Reimplementing our first example from scratch
