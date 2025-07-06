@@ -18,3 +18,33 @@ result = re.split(r'(\s)', text)
 print(result)
 
 # Raschka p. 23
+
+newResult = re.split(r'([,.\s])', text)
+print(newResult)
+
+newText = "Hello, world. Is this-- a test?"
+newNewResult = [item.strip() for item in re.split(r'([,.]|--|\s)', newText)
+                if len(item.strip()) > 0]
+print(newNewResult)
+
+# Raschka p. 24
+
+preprocessed = re.split(r'([,.:;?_!"()\']|--|\s)', raw_text)
+preprocessed = [item.strip() for item in preprocessed if item.strip()]
+print(len(preprocessed))
+print(preprocessed[:30])
+
+# Raschka p. 25
+
+all_words = sorted(set(preprocessed))
+vocab_size = len(all_words)
+print(vocab_size)
+
+vocab = {token: integer for integer, token in enumerate(all_words)}
+
+for i, item in enumerate(vocab.items()):
+    print(item)
+    if i >= 50:
+        break
+
+# Raschka p. 27

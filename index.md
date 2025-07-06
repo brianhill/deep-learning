@@ -10,18 +10,16 @@ ANOTHER TODO: *I could add more motivation for the multi-variable calculus resul
 
 ## References and Notes
 
-So far I have been getting a lot of my understanding of deep learning from Chapters 18 and 19 of Joel Grus, *Data Science from Scratch, 2nd Edition.* Grus does not cover transformers, so following up on a recommendation for further reading given at the end of Chapter 19, I am looking at *[Deep Learning with Python, Third Edition](https://www.manning.com/books/deep-learning-with-python-third-edition)* (forthcoming) by Chollet &amp; Watson. I am also looking at *[Build a Large Language Model (from Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch)* by Sebastian Raschka, which is popular and well-reviewed on Amazon.
-
-### Envs and Resources for Raschka and for Chollet &amp; Watson
-
-See [Envs and Resources](./envs_and_resources.html)
+So far I have been getting a lot of my understanding of deep learning from Chapters 18 and 19 of Joel Grus, *Data Science from Scratch, 2nd Edition.* Grus does not cover transformers, so following up on a recommendation for further reading given at the end of Chapter 19, I am looking at *[Deep Learning with Python, Third Edition](https://www.manning.com/books/deep-learning-with-python-third-edition)* (forthcoming) by Chollet &amp; Watson. I am also looking at *[Build a Large Language Model (from Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch)* by Sebastian Raschka, which is doing very well on Amazon, and which uses PyTorch rather than Keras.
 
 ### Raschka Notes
 
-* Chapter 1 and Appendix A [Overview and Setup](./raschka/rk_ch01_and_appa-overview_and_setup.py)
-* Chapter 2 [Working with Text](./raschka/rk_ch02-working_with_text.py)
+* [Envs and Resources](./envs_and_resources-raschka.html) for Raschka
+* Chapter 1 and Appendix A: [Overview and Setup](./raschka/rk_ch01_and_appa-overview_and_setup.py)
+* Chapter 2: [Working with Text](./raschka/rk_ch02-working_with_text.py)
 
 ### Chollet &amp; Watson Notes
 
-* Chapter 2 [Building Blocks](./chollet-watson/cw_ch02-building_blocks.py)
-* Chapter 3 [Python Frameworks](./chollet-watson/cw_ch03-python_frameworks.py)
+* [Envs and Resources](./envs_and_resources-chollet_and_watson.html) for Chollet &amp; Watson
+* Chapter 2: [Building Blocks](./chollet-watson/cw_ch02-building_blocks.py)
+* Chapter 3: [Python Frameworks](./chollet-watson/cw_ch03-python_frameworks.py)
