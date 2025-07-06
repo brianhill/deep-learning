@@ -14,7 +14,7 @@ So far I have been getting a lot of my understanding of deep learning from Chapt
 
 ### Envs and Resources for Raschka and for Chollet &amp; Watson
 
-See [README](./README.html)
+See [Envs and Resources](./envs_and_resources.html)
 
 ### Raschka Notes
 
@@ -25,4 +25,3 @@ See [README](./README.html)
 
 * Chapter 2 [Building Blocks](./chollet-watson/cw_ch02-building_blocks.py)
 * Chapter 3 [Python Frameworks](./chollet-watson/cw_ch03-python_frameworks.py)
-

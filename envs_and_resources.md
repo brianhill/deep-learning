@@ -1,6 +1,6 @@
-# README
+# Environments and Resources
 
-*envs and resourcces used by the project*
+*Document the dependencies of the projects*
 
 ## The raschka env
 
