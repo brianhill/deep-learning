@@ -13,6 +13,7 @@ conda create -n raschka python=3.12.7 --verbose
 conda activate raschka
 pip install torch
 pip install numpy
+pip install tiktoken
 ```
 
 The log showed that torch 2.7.1 was installed. Raschka used 2.4.0 when writing his book, and
@@ -20,6 +21,8 @@ he recommends using that exact version.
 
 It was surprising that numpy was not installed as a dependency of torch. Installing it got
 version 2.3.1.
+
+Adding tiktoken to the env was on p. 33 of Raschka. It installed tiktoken-0.9.
 
 ## Resources for Raschka
 
