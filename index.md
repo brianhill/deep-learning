@@ -17,6 +17,7 @@ So far I have been getting a lot of my understanding of deep learning from Chapt
 * [Envs and Resources](./envs_and_resources-raschka.html) for Raschka
 * Chapter 1 and Appendix A: [Overview and Setup](./raschka/rk_ch01_and_appa-overview_and_setup.py)
 * Chapter 2: [Working with Text](./raschka/rk_ch02-working_with_text.py)
+* Chapter 3 (NOT STARTED): [Attention Mechanisms](./raschka/rk_ch03-attention_mechanisms.py)
 
 ### Chollet &amp; Watson Notes
 

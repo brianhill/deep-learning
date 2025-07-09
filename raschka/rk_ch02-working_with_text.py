@@ -217,3 +217,42 @@ print("Inputs:\n", inputs)
 print("\nTargets:\n", targets)
 
 # Raschka p. 42
+
+# vocab_size = 6
+# output_dim = 3
+#
+# torch.manual_seed(123)
+# embedding_layer = torch.nn.Embedding(vocab_size, output_dim)
+# print(embedding_layer.weight.shape)  # 6 rows, 3 columns
+# print(embedding_layer.weight)
+# print(embedding_layer(torch.tensor([2, 3, 5, 1])))
+
+# Raschka p. 46
+
+vocab_size = 50257
+output_dim = 256
+
+token_embedding_layer = torch.nn.Embedding(vocab_size, output_dim)
+
+max_length_p46 = 4
+dataloader_v1_3 = create_dataloader_v1(
+    raw_text,
+    batch_size=8,
+    max_length=max_length_p46,
+    stride=max_length_p46,
+    shuffle=False,
+)
+data_iter = iter(dataloader_v1_3)
+inputs, targets = next(data_iter)
+print("Token IDs\n", inputs)
+print("\nInputs shape:\n", inputs.shape)
+
+token_embeddings = token_embedding_layer(inputs)
+print(token_embeddings.shape)
+
+# Raschka p. 47
+
+context_length = max_length_p46
+pos_embedding_layer = torch.nn.Embedding(context_length, output_dim)
+pos_embeddings = pos_embedding_layer(torch.arange(context_length))
+print(pos_embeddings.shape)
